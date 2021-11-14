@@ -36,7 +36,7 @@
 2 Preparation for Construction 2.1 Documentation Preparation There are two methods for you to choose:
  Method 1 (Recommended) First, visit https://gohugo.io/ (Hugo official website). Then, click Quick Start on the homepage to get help information for building a website with Hugo."><meta itemprop="datePublished" content="2021-11-13T16:58:47+08:00" />
 <meta itemprop="dateModified" content="2021-11-13T16:58:47+08:00" />
-<meta itemprop="wordCount" content="449">
+<meta itemprop="wordCount" content="571">
 <meta itemprop="keywords" content="" /></head>
 <body><div class="container"><header>
 <h1>Lee&#39;s Doc Site</h1>
@@ -100,21 +100,21 @@ Search other people&rsquo;s building experience posts.</li>
 <li>Install Hugo, Git, and MARKDOWNPAD on your computer.<br>
 Just follow the prompts to complete the installtion. <!-- raw HTML omitted -->Record the installation directory of <strong>Hugo</strong> and <strong>Git</strong> during installation.<!-- raw HTML omitted --></li>
 <li>Add the installation path of Hugo and Git to the system environment variable <strong>Path</strong>.<br>
-In the following, the Hugo path takes <em><strong>D:\hugo</strong></em> as an example, and the Git path takes <em><strong>D:\git</strong></em> as an example.</li>
+In the following, the Hugo path takes <em><strong>D:/hugo</strong></em> as an example, and the Git path takes <em><strong>D:/git</strong></em> as an example.</li>
 <li>Run <strong>cmd</strong>, execute <strong>hugo version</strong> and <strong>git version</strong> in sequence to confirm that hugo and git can be used normally.</li>
-<li>Create a subdirectory <strong>DocSite</strong> under <strong>D:\hugo</strong>.<br>
+<li>Create a subdirectory <strong>DocSite</strong> under <strong>D:/hugo</strong>.<br>
 <strong>DocSite</strong> is used to store the website code.</li>
 </ol>
 <h2 id="32-using-hugo-to-generate-your-website">3.2 Using Hugo to Generate Your Website</h2>
 <ol>
-<li>Run <strong>cmd</strong>, execute <strong>cd</strong> <em><strong>D:\hugo\DocSite</strong></em> to enter your website path.</li>
+<li>Run <strong>cmd</strong>, exeucte <strong>cd</strong> <em><strong>D:/hugo/DocSite</strong></em> to enter your website path.</li>
 <li>Execute <strong>hugo new site</strong> <em><strong>Lee-DOC.github.io</strong></em> in the <strong>cmd</strong> window. （<em><strong>Lee-DOC.github.io</strong></em> is just an example.）<br>
-The <em><strong>Lee-DOC.github.io</strong></em> folder is automatically generated in the <em><strong>D:\hugo\DocSite</strong></em> directory, which contains the relevant files of the website.</li>
+The <em><strong>Lee-DOC.github.io</strong></em> folder is automatically generated in the <em><strong>D:/hugo/DocSite</strong></em> directory, which contains the relevant files of the website.</li>
 <li>Execute <strong>hugo new _index.md</strong> in the <strong>cmd</strong> window.<br>
-<strong>_index.md</strong> is automatically generated in the <strong>D:\hugo\DocSite\Lee-DOC.github.io\content</strong> directory.</li>
+<strong>_index.md</strong> is automatically generated in the <strong>D:/hugo/DocSite/Lee-DOC.github.io/content</strong> directory.</li>
 <li>Use MARKDOWNPAD to edit the <strong>_index.md</strong> file.<br>
 Markdown tutorial can refer to <a href="https://www.runoob.com/markdown/md-advance.html">https://www.runoob.com/markdown/md-advance.html</a>.</li>
-<li>Download a theme that suits the style of your website from <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>.  Then unzip the downloaded theme package under <strong>D:\hugo\DocSite\Lee-DOC.github.io\themes</strong>.
+<li>Download a theme that suits the style of your website from <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>.  Then unzip the downloaded theme package under <strong>D:/hugo/DocSite/Lee-DOC.github.io/themes</strong>.
 My choice is <strong>Techdoc</strong>. You can get it from <a href="https://github.com/thingsym/hugo-theme-techdoc">https://github.com/thingsym/hugo-theme-techdoc</a>.</li>
 <li>Configure the config.toml file. The default 3 parameters are as follows: (For more parameter settings, please refer to <a href="https://gohugo.io/getting-started/configuration/#all-variables-yaml">https://gohugo.io/getting-started/configuration/#all-variables-yaml</a>.)
 <ul>
@@ -124,10 +124,26 @@ My choice is <strong>Techdoc</strong>. You can get it from <a href="https://gith
 </ul>
 </li>
 <li>Execute <strong>hugo server -t</strong> <em><strong>hugo-theme-techdoc-master</strong></em> in the cmd window for local testing.<br>
-<em><strong>hugo-theme-techdoc-master</strong></em> is the name of the theme stored in <strong>D:\hugo\DocSite\Lee-DOC.github.io\themes</strong>.</li>
+<em><strong>hugo-theme-techdoc-master</strong></em> is the name of the theme stored in <strong>D:/hugo/DocSite/Lee-DOC.github.io/themes</strong>.</li>
 <li>After the server is started, visit <strong>http://localhost:1313</strong> to visit the website, and if you find the problem, you can modify it in time.</li>
 </ol>
 <h2 id="32-using-git-to-publish-your-website">3.2 Using Git to Publish Your Website</h2>
+<ol>
+<li>Execute <strong>hugo -t</strong> <em><strong>hugo-theme-techdoc-master</strong></em> in the <strong>cmd</strong> window.<br>
+Hugo will compile all files and output them to the <em><strong>D:/hugo/DocSite/public</strong></em> directory.</li>
+<li>(Optional) If you don&rsquo;t have a Git account, just visit <a href="https://github.com/">https://github.com/</a> and create your own account.<br>
+My account name is <strong>shuiercooky</strong>.</li>
+<li>Create a repository on github with the name <!-- raw HTML omitted -->.github.io (for example, <em><strong>shuiercooky.github.io</strong></em>).</li>
+<li>(Optional) If it&rsquo;s the first time for you to use Git, configure user information by referring to <a href="https://www.cnblogs.com/kinglead/p/10979641.html">https://www.cnblogs.com/kinglead/p/10979641.html</a>.</li>
+<li>Run <strong>cmd</strong> and exeucte <strong>cd</strong> <em><strong>D:/hugo/DocSite/public</strong></em> to enter the <strong>public</strong> directory.</li>
+<li>Execute the following commands in sequence:<br>
+<strong>git init</strong><br>
+<strong>git remote set-url origin <a href="mailto:git@github.com">git@github.com</a>:shuiercooky/shuiercooky.github.io.git</strong><br>
+<strong>git add .</strong><br>
+<strong>git commit -m &ldquo;first commit&rdquo;</strong><br>
+<strong>git push -u origin master</strong></li>
+<li>Open &lt;your user name&gt;.github.io URL (for example, <a href="https://shuiercooky.github.io/)">https://shuiercooky.github.io/)</a>, you can see your personal website.</li>
+</ol>
 <div class="edit-meta">
 Last updated on 13 Nov 2021
 
@@ -140,6 +156,22 @@ Published on 13 Nov 2021
 </footer>
 </main>
 <div class="sidebar">
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="https://shuiercooky.github.io/">Home</a></li>
+
+<li class="parent has-sub-menu"><a href="https://shuiercooky.github.io/post/">Posts<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class="active"><a href="https://shuiercooky.github.io/post/how-to-create-a-personal-website/">How to Create a Personal Website</a></li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
 
 <div class="sidebar-footer"></div>
 </div>
