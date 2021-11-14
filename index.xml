@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome, my new friend~~ on Lee&#39;s Doc Site</title>
+    <link>https://shuiercooky.github.io/</link>
+    <description>Recent content in Welcome, my new friend~~ on Lee&#39;s Doc Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Nov 2021 19:25:25 +0800</lastBuildDate><atom:link href="https://shuiercooky.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Create a Personal Website</title>
+      <link>https://shuiercooky.github.io/post/how-to-create-a-personal-website/</link>
+      <pubDate>Sat, 13 Nov 2021 16:58:47 +0800</pubDate>
+      
+      <guid>https://shuiercooky.github.io/post/how-to-create-a-personal-website/</guid>
+      <description>1 Overview If you want to have your own website, this blog will be your best helper. It will show you how to build and publish your website quickly from scratch.
+2 Preparation for Construction 2.1 Documentation Preparation There are two methods for you to choose:
+ Method 1 (Recommended) First, visit https://gohugo.io/ (Hugo official website). Then, click Quick Start on the homepage to get help information for building a website with Hugo.</description>
+    </item>
+    
+  </channel>
+</rss>
